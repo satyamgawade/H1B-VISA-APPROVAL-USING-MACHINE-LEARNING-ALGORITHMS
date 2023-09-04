@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>INPUT FORM</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="register">
+        <h2>Sign Up</h2>
+        <form id="register" method="POST" action="/signup">
+          <div class="container">
+            <label for="email">Email</label><br />
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+            <br /><br />
+            <label for="psw">Password</label><br />
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+            <br /><br />
+            <label for="psw-repeat">Confirm Password</label><br />
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              name="psw-repeat"
+              required
+            />
+            <br /><br />
+
+            <div class="clearfix">
+              <a href="/signin"
+                ><button type="button" class="signinbtn">Sign In</button></a
+              >
+              <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

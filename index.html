@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INPUT FORM</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+</head>
+
+<body>
+	<div class="main">
+		<div class="register">
+			<h2>H1B VISA ACCEPTANCE PREDICTION</h2>
+			<form id="register" method="POST" action="/predict">	
+				<label>Prevailing Wages: </label>
+				<br>
+				<input type="number" name="prevailing_wage" id="wage" placeholder="Enter Your Prevailing Wages" required>
+				<br><br>
+				<label>Employer Name: </label>
+				<br>
+				<select name='employer_name' id='ename'>	
+					<option value="tata consultancy services limited">tata consultancy services limited</option>
+					<option value="infosys limited">infosys limited</option>
+					<option value="other">other</option>
+					<option value="ust global inc">ust global inc</option>
+					<option value="hcl america inc">hcl america inc</option>
+					<option value="tech mahindra americas inc">tech mahindra americas inc</option>
+					<option value="ibm india private limited">ibm india private limited</option>
+					<option value="cognizant technology solutions us corporation">cognizant technology solutions us corporation</option>
+					<option value="deloitte consulting llp">deloitte consulting llp</option>
+					<option value="wipro limited">wipro limited</option>
+					<option value="larsen and toubro infotech limited">larsen and toubro infotech limited</option>
+					<option value="ernst and young us llp">ernst and young us llp</option>
+					<option value="microsoft corporation">microsoft corporation</option>
+					<option value="ibm corporation">ibm corporation</option>
+					<option value="igate technologies inc">igate technologies inc</option>
+					<option value="capgemini america inc">capgemini america inc</option>
+					<option value="accenture llp">accenture llp</option>
+					<option value="deloitte and touche llp">deloitte and touche llp</option>
+					<option value="intel corporation">intel corporation</option>
+					<option value="fujitsu america inc">fujitsu america inc</option>
+					<option value="tech mahindra americasinc">tech mahindra americasinc</option>
+				</select>
+				<!--<input type="text" name="employer_name" id="ename" placeholder="Enter Your Employer's name">-->
+				<br><br>
+				<label>SOC Name: </label>
+				<br>
+				<select name="soc_name" id="sname">
+					
+					<option value="IT Profession">IT Profession</option>
+					<option value="Finance">Finance</option>
+					<option value="Management">Management</option>
+					<option value="Medical">Medical</option>
+					<option value="Teaching">Teaching</option>
+					<option value="operation research analysts">operation research analysts</option>
+					<option value="Architecture & Engineering">Architecture & Engineering</option>
+					<option value="Food & Service">Food & Service</option>
+					<option value="Advance Science">Advance Science</option>
+					<option value="Marketing">Marketing</option>
+					<option value="Mathematician">Mathematician</option>
+					<option value="Others">Others</option>
+					<option value="Fashion & Entertainment">Fashion & Entertainment</option>
+					<option value="Technician">Technician</option>
+					<option value="other">other</option>
+					<option value="actuaries">actuaries</option>
+					<option value="internists general">internists general</option>
+					<option value="psychologists ">psychologists </option>
+					<option value="geographers">geographers</option>
+					<option value="librarians">librarians</option>
+					<option value="Lawyer">Lawyer</option>
+				</select>
+
+				<br><br>
+				<label>Worksite: </label>
+				<br>
+				<select name="worksite" id="worksite">
+					<option value="california">california</option>
+					<option value="florida">florida</option>
+					<option value="pennsylvania">pennsylvania</option>
+					<option value="georgia">georgia</option>
+					<option value="newjersey">newjersey</option>
+					<option value="texas">texas</option>
+					<option value="maryland">maryland</option>
+					<option value="northcarolina">northcarolina</option>
+					<option value="connecticut">connecticut</option>
+					<option value="other">other</option>
+					<option value="virginia">virginia</option>
+					<option value="newyork">newyork</option>
+					<option value="massachusetts">massachusetts</option>
+					<option value="michigan">michigan</option>
+					<option value="illinois">illinois</option>
+					<option value="washington">washington</option>
+					<option value="minnesota">minnesota</option>
+					<option value="ohio">ohio</option>
+					<option value="arizona">arizona</option>
+					<option value="wisconsin">wisconsin</option>
+					<option value="missouri">missouri</option>
+
+				</select>
+				<br><br>
+				<label>Full Time Position: </label> <br>
+				
+				<select name="full_time" id="full_time">
+					<option value="Y">Yes</option>
+					<option value="N">No</option>
+				</select>
+				<br><br>
+
+				<label>Wage Category: </label> <br>
+
+				<select name="wage_category" id="wage_category">
+					<option value="LOW">Low</option>
+					<option value="MEDIUM">Medium</option>
+					<option value="HIGH">High</option>
+				</select>
+				<br><br>
+
+				<input type="submit" value="Submit" name="submit" id="submit">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

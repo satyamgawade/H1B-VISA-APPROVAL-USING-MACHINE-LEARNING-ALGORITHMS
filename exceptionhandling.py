@@ -1,0 +1,4 @@
+class ZeroWageError(Exception):
+    pass
+
+
